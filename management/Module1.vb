@@ -16,7 +16,7 @@ Module Module1
             conn.ConnectionString = "server=localhost; database=vu; user=root; password=;"
             conn.Open()
 
-            MsgBox("connection successful", MsgBoxStyle.Information)
+            'MsgBox("connection successful", MsgBoxStyle.Information)
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try

@@ -39,6 +39,8 @@ Partial Class Form1
         Label4 = New Label()
         Label5 = New Label()
         BtnConn = New Button()
+        DataGridView1 = New DataGridView()
+        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' BtnAddNew
@@ -189,11 +191,22 @@ Partial Class Form1
         BtnConn.Text = "Test Connection"
         BtnConn.UseVisualStyleBackColor = True
         ' 
+        ' DataGridView1
+        ' 
+        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView1.Location = New Point(37, 460)
+        DataGridView1.Name = "DataGridView1"
+        DataGridView1.RowHeadersWidth = 51
+        DataGridView1.RowTemplate.Height = 29
+        DataGridView1.Size = New Size(657, 188)
+        DataGridView1.TabIndex = 18
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(751, 698)
+        Controls.Add(DataGridView1)
         Controls.Add(BtnConn)
         Controls.Add(Label5)
         Controls.Add(Label4)
@@ -213,6 +226,7 @@ Partial Class Form1
         Controls.Add(BtnAddNew)
         Name = "Form1"
         Text = "Student Management System"
+        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -234,4 +248,5 @@ Partial Class Form1
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents BtnConn As Button
+    Friend WithEvents DataGridView1 As DataGridView
 End Class
