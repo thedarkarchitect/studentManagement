@@ -28,16 +28,17 @@ Partial Class Form1
         BtnPrint = New Button()
         BtnDelete = New Button()
         BtnExit = New Button()
-        TextBox1 = New TextBox()
-        TextBox3 = New TextBox()
-        TextBox4 = New TextBox()
-        TextBox5 = New TextBox()
-        TextBox6 = New TextBox()
+        TxtSearch = New TextBox()
+        TxtCourse = New TextBox()
+        TxtAge = New TextBox()
+        TxtLname = New TextBox()
+        TxtFname = New TextBox()
         Label1 = New Label()
         Label2 = New Label()
         Label3 = New Label()
         Label4 = New Label()
         Label5 = New Label()
+        BtnConn = New Button()
         SuspendLayout()
         ' 
         ' BtnAddNew
@@ -94,40 +95,40 @@ Partial Class Form1
         BtnExit.Text = "Exit"
         BtnExit.UseVisualStyleBackColor = True
         ' 
-        ' TextBox1
+        ' TxtSearch
         ' 
-        TextBox1.Location = New Point(520, 96)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(174, 27)
-        TextBox1.TabIndex = 6
+        TxtSearch.Location = New Point(520, 96)
+        TxtSearch.Name = "TxtSearch"
+        TxtSearch.Size = New Size(174, 27)
+        TxtSearch.TabIndex = 6
         ' 
-        ' TextBox3
+        ' TxtCourse
         ' 
-        TextBox3.Location = New Point(161, 350)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(174, 27)
-        TextBox3.TabIndex = 8
+        TxtCourse.Location = New Point(161, 350)
+        TxtCourse.Name = "TxtCourse"
+        TxtCourse.Size = New Size(174, 27)
+        TxtCourse.TabIndex = 8
         ' 
-        ' TextBox4
+        ' TxtAge
         ' 
-        TextBox4.Location = New Point(161, 253)
-        TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(174, 27)
-        TextBox4.TabIndex = 9
+        TxtAge.Location = New Point(161, 253)
+        TxtAge.Name = "TxtAge"
+        TxtAge.Size = New Size(174, 27)
+        TxtAge.TabIndex = 9
         ' 
-        ' TextBox5
+        ' TxtLname
         ' 
-        TextBox5.Location = New Point(161, 170)
-        TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(174, 27)
-        TextBox5.TabIndex = 10
+        TxtLname.Location = New Point(161, 170)
+        TxtLname.Name = "TxtLname"
+        TxtLname.Size = New Size(174, 27)
+        TxtLname.TabIndex = 10
         ' 
-        ' TextBox6
+        ' TxtFname
         ' 
-        TextBox6.Location = New Point(161, 96)
-        TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(174, 27)
-        TextBox6.TabIndex = 11
+        TxtFname.Location = New Point(161, 96)
+        TxtFname.Name = "TxtFname"
+        TxtFname.Size = New Size(174, 27)
+        TxtFname.TabIndex = 11
         ' 
         ' Label1
         ' 
@@ -179,21 +180,31 @@ Partial Class Form1
         Label5.TabIndex = 16
         Label5.Text = "Search:"
         ' 
+        ' BtnConn
+        ' 
+        BtnConn.Location = New Point(227, 399)
+        BtnConn.Name = "BtnConn"
+        BtnConn.Size = New Size(274, 29)
+        BtnConn.TabIndex = 17
+        BtnConn.Text = "Test Connection"
+        BtnConn.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(BtnConn)
         Controls.Add(Label5)
         Controls.Add(Label4)
         Controls.Add(Label3)
         Controls.Add(Label2)
         Controls.Add(Label1)
-        Controls.Add(TextBox6)
-        Controls.Add(TextBox5)
-        Controls.Add(TextBox4)
-        Controls.Add(TextBox3)
-        Controls.Add(TextBox1)
+        Controls.Add(TxtFname)
+        Controls.Add(TxtLname)
+        Controls.Add(TxtAge)
+        Controls.Add(TxtCourse)
+        Controls.Add(TxtSearch)
         Controls.Add(BtnExit)
         Controls.Add(BtnDelete)
         Controls.Add(BtnPrint)
@@ -212,14 +223,15 @@ Partial Class Form1
     Friend WithEvents BtnPrint As Button
     Friend WithEvents BtnDelete As Button
     Friend WithEvents BtnExit As Button
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents TxtSearch As TextBox
+    Friend WithEvents TxtCourse As TextBox
+    Friend WithEvents TxtAge As TextBox
+    Friend WithEvents TxtLname As TextBox
+    Friend WithEvents TxtFname As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents BtnConn As Button
 End Class
