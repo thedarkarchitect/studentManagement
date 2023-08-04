@@ -25,6 +25,18 @@ Public Class Form1
         DataGridView1.Columns.Clear()
     End Sub
 
+    Public Sub search_record()
+        connectDatabase()
+        ada = New MySqlDataAdapter("SELECT * FROM studenttb WHERE fname = '" & TxtSearch.Text & "'", conn)
+
+
+    End Sub
+
+    Public Sub update_record()
+        connectDatabase()
+
+    End Sub
+
     Public Sub reset_button()
         TxtAge.Clear()
         TxtCourse.Clear()
@@ -93,6 +105,10 @@ Public Class Form1
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
+    End Sub
+
+    Private Sub BtnUpdate_Click(sender As Object, e As EventArgs) Handles BtnUpdate.Click
 
     End Sub
 End Class

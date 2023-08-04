@@ -40,6 +40,7 @@ Partial Class Form1
         Label5 = New Label()
         BtnConn = New Button()
         DataGridView1 = New DataGridView()
+        Button1 = New Button()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -201,11 +202,21 @@ Partial Class Form1
         DataGridView1.Size = New Size(657, 188)
         DataGridView1.TabIndex = 18
         ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(749, 95)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(94, 29)
+        Button1.TabIndex = 19
+        Button1.Text = "Search"
+        Button1.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(751, 698)
+        ClientSize = New Size(930, 698)
+        Controls.Add(Button1)
         Controls.Add(DataGridView1)
         Controls.Add(BtnConn)
         Controls.Add(Label5)
@@ -249,4 +260,5 @@ Partial Class Form1
     Friend WithEvents Label5 As Label
     Friend WithEvents BtnConn As Button
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Button1 As Button
 End Class
